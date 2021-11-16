@@ -40,7 +40,6 @@ class Validator
         $type = $data['type'];
         foreach ($this->fields[$type] as $index => $checkMethod) {
             $error = $this->{$checkMethod}($data[$index]);
-            print_r($error);
             if (false !== $error) {
                 $result[$index] = $error;
             }
