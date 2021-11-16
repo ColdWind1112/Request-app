@@ -1,5 +1,9 @@
-(function () {
-    document.getElementById('type').addEventListener('change', updateForm);
+(function() {
+    const element = document.getElementById('type');
+    if (element == undefined) {
+        return;
+    }
+    element.addEventListener('change', updateForm);
 
     function updateForm(e) {
         switch (e.target.value) {
