@@ -8,7 +8,7 @@ class Requests
     {
 
         $time = time();
-        $path = '/v1/user/self/zone/php-assignment-9.ws/' . $requestUrl;
+        $path = '/v1/user/self/zone/' . $_ENV['DOMAIN_NAME'] . '/' . $requestUrl;
         $api = 'https://rest.websupport.sk';
         $query = ''; // query part is optional and may be empty
         $apiKey = $_ENV['API_KEY'];
@@ -32,7 +32,6 @@ class Requests
 
         $response = curl_exec($ch);
         curl_close($ch);
-
 
         return $response;
     }
