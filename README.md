@@ -1,5 +1,7 @@
 # Request-app
 
+App runs on base address /records
+
 # Requirements
 
 - PHP 7.2+
