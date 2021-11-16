@@ -17,7 +17,7 @@ or
 1. Copy .env.example file to .env with command `cp .env.example .env`
 2. Set values in .env file
 3. Run `docker build -t IMAGE_NAME .`
-3. Run `docker -d -p YOUR_PREFERED_PORT:80 IMAGE_NAME`
+3. Run `docker run -d -p YOUR_PREFERED_PORT:80 IMAGE_NAME`
 
 ## Without docker 
 
