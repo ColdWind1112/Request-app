@@ -3,6 +3,5 @@ WORKDIR /var/www/html
 
 RUN a2enmod rewrite
 
-# COPY index.php index.php
-# COPY src/ src
+COPY src/ /var/www/html/
 EXPOSE 80
